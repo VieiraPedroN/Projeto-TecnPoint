@@ -30,12 +30,13 @@
         {
             textNome = new TextBox();
             textSenha = new TextBox();
-            btnCadastrar = new Button();
+            BtnCadastrar = new Button();
             textEmail = new TextBox();
             SuspendLayout();
             // 
             // textNome
             // 
+            textNome.Cursor = Cursors.IBeam;
             textNome.Location = new Point(335, 154);
             textNome.Name = "textNome";
             textNome.Size = new Size(125, 27);
@@ -43,39 +44,42 @@
             // 
             // textSenha
             // 
+            textSenha.Cursor = Cursors.IBeam;
             textSenha.Location = new Point(335, 245);
             textSenha.Name = "textSenha";
             textSenha.Size = new Size(125, 27);
-            textSenha.TabIndex = 1;
+            textSenha.TabIndex = 2;
             // 
-            // btnCadastrar
+            // BtnCadastrar
             // 
-            btnCadastrar.Location = new Point(335, 316);
-            btnCadastrar.Name = "btnCadastrar";
-            btnCadastrar.Size = new Size(94, 29);
-            btnCadastrar.TabIndex = 2;
-            btnCadastrar.Text = "Cadastrar";
-            btnCadastrar.UseVisualStyleBackColor = true;
-            btnCadastrar.Click += btnCadastrar_Click;
+            BtnCadastrar.Cursor = Cursors.Hand;
+            BtnCadastrar.Location = new Point(335, 316);
+            BtnCadastrar.Name = "BtnCadastrar";
+            BtnCadastrar.Size = new Size(94, 29);
+            BtnCadastrar.TabIndex = 3;
+            BtnCadastrar.Text = "Cadastrar";
+            BtnCadastrar.UseVisualStyleBackColor = true;
+            BtnCadastrar.Click += btnCadastrar_Click;
             // 
             // textEmail
             // 
+            textEmail.Cursor = Cursors.IBeam;
             textEmail.Location = new Point(335, 201);
             textEmail.Name = "textEmail";
             textEmail.Size = new Size(125, 27);
-            textEmail.TabIndex = 3;
+            textEmail.TabIndex = 1;
             // 
-            // Form1
+            // FormCadastroUser
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(textEmail);
-            Controls.Add(btnCadastrar);
+            Controls.Add(BtnCadastrar);
             Controls.Add(textSenha);
             Controls.Add(textNome);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "FormCadastroUser";
+            Text = "FormCadastrar";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -83,8 +87,9 @@
         #endregion
 
         private TextBox textNome;
-        private TextBox textSenha;
-        private Button btnCadastrar;
         private TextBox textEmail;
+        private TextBox textSenha;
+        private Button BtnCadastrar;
+        
     }
 }

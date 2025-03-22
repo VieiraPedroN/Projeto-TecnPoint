@@ -32,6 +32,8 @@ namespace TecnPoint
 
                 var repository = new UsuariosAdd();
                 repository.Add(usuario);
+
+                MessageBox.Show("Usuario cadastrado no sistema");
             }
             catch (Exception ex) 
             {
